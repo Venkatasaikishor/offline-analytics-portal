@@ -18,33 +18,36 @@ A robust offline-first web analytics platform built using **Next.js**, **Node.js
 
 offline-analytics-portal/
 ├── backend/
-│   ├── server.js        # Express server with event ingestion and analytics endpoints
-│   ├── db.js           # SQLite database setup
-│   └── package.json    # Backend dependencies
+│   ├── server.js
+│   ├── db.js
+│   ├── package.json
+│   └── migrations/
+│       └── 001_create_events_table.sql
 ├── frontend/
 │   ├── pages/
-│   │   ├── _app.js     # Custom App with AnalyticsTracker
-│   │   ├── index.js    # Home page (Page 1)
-│   │   ├── page2.js    # Page 2
-│   │   ├── page3.js    # Page 3
-│   │   ├── page4.js    # Page 4
-│   │   ├── page5.js    # Page 5
-│   │   └── admin.js    # Admin dashboard page
+│   │   ├── _app.js
+│   │   ├── index.js
+│   │   ├── page2.js
+│   │   ├── page3.js
+│   │   ├── page4.js
+│   │   ├── page5.js
+│   │   └── admin.js
 │   ├── public/
-│   │   ├── sw.js       # Service worker for offline support
-│   │   └── manifest.json # PWA manifest
+│   │   ├── sw.js
+│   │   ├── manifest.json
+│   │   └── icon.png
 │   ├── components/
-│   │   ├── AnalyticsTracker.js # Tracks user interactions
-│   │   └── AdminDashboard.js   # Admin dashboard with filters and charts
+│   │   ├── AnalyticsTracker.js
+│   │   └── AdminDashboard.js
 │   ├── lib/
-│   │   └── analytics.js        # Event tracking and syncing logic
+│   │   └── analytics.js
 │   ├── styles/
-│   │   └── globals.css         # Global styles with Tailwind CSS
-│   ├── package.json           # Frontend dependencies
-│   ├── tailwind.config.js     # Tailwind CSS configuration
-│   └── postcss.config.js      # PostCSS configuration
-├── README.md                  # Project documentation
-└── .gitignore                 # Git ignore rules
+│   │   └── globals.css
+│   ├── package.json
+│   ├── tailwind.config.js
+│   └── postcss.config.js
+├── README.md
+└── .gitignore
 
 
 
